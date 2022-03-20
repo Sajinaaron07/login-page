@@ -90,10 +90,14 @@ h2 {
 @media (min-width:700px) {
     .col-lg-3:first-child {
         text-align: right;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
     }
 
     .col-lg-3:last-child {
         text-align: left;
+    }
+    .row{
+        align-items:center;
+        margin-top:2rem;
     }
 }
