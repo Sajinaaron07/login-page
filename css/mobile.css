@@ -96,8 +96,9 @@ h2 {
     .col-lg-3:last-child {
         text-align: left;
     }
-    .row{
-        align-items:center;
-        margin-top:2rem;
+
+    .row {
+        align-items: center;
+        margin-top: 2rem;
     }
 }
