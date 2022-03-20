@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    min-height: 100vh;
+    background-image: url('https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    /* apply the blur */
+    pointer-events: none;
+    /* make the overlay click-through */
+    z-index: 0;
+}
+
+.main {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 5;
+    text-align: center;
+    color: white;
+
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.priofile {
+    width: 20%;
+    border: 2.5px solid white;
+    border-radius: 55%;
+
+}
+
+.row {
+    padding: 0 10%;
+}
+
+.btn {
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 13px;
+    background: #00c2a2;
+    padding: 9px 25px 9px 25px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.btn:hover {
+    background: #02e0bb;
+    background-image: -webkit-linear-gradient(top, #02e0bb, #02e0bb);
+    background-image: -moz-linear-gradient(top, #02e0bb, #02e0bb);
+    background-image: -ms-linear-gradient(top, #02e0bb, #02e0bb);
+    background-image: -o-linear-gradient(top, #02e0bb, #02e0bb);
+    background-image: linear-gradient(to bottom, #02e0bb, #02e0bb);
+    text-decoration: none;
+}
+
+.col-lg-3:first-child {
+    padding-bottom: 1rem;
+}
+
+.input-group-text {
+    background-color: white;
+}
+
+@media (min-width:700px) {
+    .col-lg-3:first-child {
+        text-align: right;
+        padding-bottom: 2rem;
+    }
+
+    .col-lg-3:last-child {
+        text-align: left;
+    }
+}
